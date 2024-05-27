@@ -18,7 +18,19 @@ export const getResources = async (params: GetResroucesParams) => {
         query,
         category,
         page: parseInt(page),
-      })}`
+      })}{
+        title,
+        _id,
+        downloadLink,
+        "image": poster.asset->url,
+        views,
+        slug,
+        category
+      }`
     );
-  } catch (error) {}
+
+    return resrouces;
+  } catch (error) {
+    console.log(error);
+  }
 };

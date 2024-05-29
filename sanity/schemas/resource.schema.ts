@@ -17,7 +17,7 @@ const schema = {
       options: { source: "title" },
     },
     {
-      name: "downloadlink",
+      name: "downloadLink",
       title: "Download Link",
       type: "url",
       validation: (Rule: any) => Rule.required(),
